@@ -123,6 +123,7 @@ header p {
     text-decoration: none;
     position: relative;
     right: 5px;
+    cursor: pointer;
 }
 
 #contact p:hover {
