@@ -117,7 +117,7 @@ header p {
     padding: 10px;
 }
 
-#contact a {
+#contact p {
     font-family: 'Poppins', sans-serif;
     color: white;
     text-decoration: none;
@@ -125,7 +125,7 @@ header p {
     right: 5px;
 }
 
-#contact a:hover {
+#contact p:hover {
     color: orange;
 }
 
