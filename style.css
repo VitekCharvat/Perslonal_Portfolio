@@ -9,6 +9,9 @@
 body {
     padding: 0rem;
     text-align: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
 
 }
 
@@ -56,7 +59,8 @@ nav a:hover {
 nav .name {
     color: orange;
     position: relative;
-    right: 5%;
+    display: flex;
+    justify-content: center;
 }
 
 .back-to-top{
@@ -157,7 +161,7 @@ header p {
     color: orange;
 }
 
-#project {
+#projects {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -169,7 +173,7 @@ header p {
     right: 6%;
 }
 
-#project i {
+#projects i {
     color: orange;
     margin-left: 5px;
     font-size: 20px;
@@ -180,7 +184,7 @@ header p {
     font-size: 2rem;
 }
 
-#project p {
+#projects p {
     text-decoration: none;
     font-family: 'Poppins', sans-serif;
     color: white;
@@ -188,7 +192,7 @@ header p {
     right: 5px;
 }
 
-#project span {
+#projects span {
     display: flex;
     justify-content: center;
     font-size: 26px;
