@@ -11,38 +11,58 @@
 <body>
     <div id="top">
         <nav> 
-            <h1 class="name">Vít Charvát</h1>
+            <name class="name">Vít Charvát</name>
             <a href="#about-me">About Me</a>
-            <a href="#projects">Projects</a>
+            <a href="#boxes">Projects</a>
             <a href="#skills">Skills</a>
             <a href="#contact">Contact</a>
             <a href="#socials">Socials</a>
-            <button class="hire-me">Hire Me</button>
+            <button class="hire-me-btn" onclick="hireMeBtn()">Hire Me</button>
         </nav>
     </div>
     <main> 
-        <header>
-            <h2> Hello, I am&nbsp;<span> Vítek </span> 😁 </h2>
-            <h1>Im starting web developer</h1>
-            <p> And this is my firts site made by me from scratch</p>
+        <header id="about-me">
+            <h2> Hello, I am&nbsp;<span> Vítek </span> 😁 </h2></header>
+            <div id="about-me">
+                <h1>Im starting web developer</h1>
+                <p>And this is my firts site made by me from scratch</p>
+            </div>
         </header>
-        <div id="projects">
-            <i class="fa-solid fa-clipboard-check"></i><p><span>0+</span> completed projects</p>
-            <i class="fa-solid fa-shield-halved"></i><p><span>67+</span> minutes of experience</p>
-            <i class="fa-solid fa-thumbs-up"></i><p><span>1+</span> happy clients</p>
+
+        <div id="boxes">
+            <div class="project">
+                <i class="fa-solid fa-clipboard-check"></i>
+                <span>5+</span>
+                <p>Completed Projects</p>
+            </div>
+            <div class="experience">
+                <i class="fa-solid fa-shield-halved"></i>
+                <span>1+ years</span>
+                <p>Experience</p>
+            </div>
+            <div class="client">
+                <i class="fa-solid fa-thumbs-up"></i>
+                <span>0+</span>
+                <p>Satisfied Clients</p>
+            </div>
         </div> 
+
         <div id="socials">
             <i class="fa-brands fa-instagram"></i><a href="https://www.instagram.com/vitece.k/" target="_blank">Instagram</a>
             <i class="fa-brands fa-discord"></i><a href="https://discord.gg/8NDT9QXmFN" target="_blank">Discord</a>
             <i class="fa-brands fa-github"></i><a href="https://github.com/VitekCharvat" target="_blank">GitHub</a>
         </div>
+
         <div id="contact">
             <i class="fa-solid fa-phone"></i><p onclick="navigator.clipboard.writeText('+420 702 285 091')">+420 702 285 091</p>
             <i class="fa-solid fa-at"></i><p onclick="navigator.clipboard.writeText('vitekcharvat@gmail.com')">vitekcharvat@gmail.com</p>
         </div>
+        
     </main>
     <nav class="back-to-top">
-    <a href="#top">Back to Top<i class="fa-solid fa-arrow-up"></i></a>
+    <a href="#top">Back to Top <i class="fa-solid fa-arrow-up"></i></a>
     </nav>
+
+    <script src="script.js"></script>
 </body>
 </html> 
