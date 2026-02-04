@@ -13,18 +13,18 @@ body  {
 
 nav {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     text-align: center;
     align-items: center;
+    flex-wrap: wrap;
     padding: 2rem;
     margin: 50px;
-
 }
 
 nav .name {
     font-family: 'Poppins', sans-serif;
     color: #3993DD;
-    justify-content: center;
+    justify-content: flex-end;
     font-size: 40px;
     font-weight: 600;
     position: relative;
@@ -37,29 +37,29 @@ nav a {
     text-decoration: none;
     font-size: 20px;
     font-weight: 600;
-    justify-content: center;
 }
 
 nav a:hover {
-    color: #aeecef;
+    color: #3993DD;
     cursor: pointer;
 }
 
 nav .hire-me-btn {
     text-decoration: none;
+    justify-content: flex-end;
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
     font-size: 18px;
-    color: #fff;
+    color: #3993DD;
     padding: 10px;
     border-radius: 15px;
-    background-color: #3993DD ;
+    background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
     border: none;
 }
 
 nav .hire-me-btn:hover {
-    color: #232528;
-    background-color: #fff ;
+    color: #fff;
+    background-image: linear-gradient(120deg, #89f7fe 0%, #66a6ff 100%);
     cursor: pointer;
 }
 
@@ -69,6 +69,21 @@ header {
     text-align: center;
     align-items: center;
     margin-top: 6rem;
+}
+
+.back-to-top {
+    display: flex;
+    justify-content: center;
+    margin: 9%;
+}
+
+.back-to-top a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.back-to-top i {
+    color: #3993DD;
 }
 
 #about-me h2 {
@@ -102,9 +117,11 @@ header span {
 
 #boxes {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     text-align: center;
     font-family: 'Poppins', sans-serif;
+    flex-wrap: wrap;
+    flex-grow: 1;
 }
 
 .project, .experience, .client {
@@ -114,9 +131,10 @@ header span {
    padding-top: 10px;
    padding-bottom: 10px;
    border-radius: 15px;
-   background-color: rgba(255, 255, 255, 0.8);
+   background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
    margin: 5rem; 
 }
+
 
 .fa-clipboard-check, .fa-shield-halved, .fa-thumbs-up {
     color: #3993DD;
@@ -161,7 +179,8 @@ header span {
 
 .back-to-top {
     display: flex;
-    justify-content: center
+    justify-content: center;
+    align-items: flex-end;
 }
 
 .back-to-top:hover {
@@ -169,3 +188,84 @@ header span {
     color:#aeecef;
 }
 
+#contact {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.phone {
+    display: flex;
+    justify-content: center;
+}
+
+.phone i {
+    position: relative;
+    top: 3px;
+    margin-right: 10px;
+    color: #3993DD;
+    font-size: 20px;
+}
+
+.phone p {
+    color: #fff;
+    font-size: 18px;
+}
+
+.email {
+    display: flex;
+    justify-content: center;
+}
+
+.email i {
+    position: relative;
+    top: 3px;
+    margin-right: 10px;
+    color: #3993DD;
+    font-size: 20px;
+}
+
+.email p {
+    color: #fff;
+    font-size: 18px;
+}
+
+.phone p:hover, .email p:hover {
+    color: #aeecef;
+    cursor: pointer;
+}
+
+#socials {
+    display: flex;
+    justify-content: center;
+    margin: 10%;
+}
+
+.fa-instagram, .fa-discord, .fa-github {
+    text-decoration: none;
+    color: #3993DD;
+    border:  1px solid;
+    border-radius: 15px;
+    padding: 15px;
+    font-size: 45px;
+    border: none;
+    background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+.fa-instagram {
+    position: relative;
+    right: 40px;
+    border: none;
+}
+
+
+.fa-github {
+    border: none;
+    position: relative;
+    left: 40px;
+}
+
+.fa-instagram:hover, .fa-discord:hover, .fa-github:hover {
+    color: #fff;
+    background-image: linear-gradient(120deg, #89f7fe 0%, #66a6ff 100%);
+}

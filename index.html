@@ -10,6 +10,7 @@
 </head>
 <body>
     <div id="top">
+        <!-- Navigation Bar -->
         <nav> 
             <name class="name">Vít Charvát</name>
             <a href="#about-me">About Me</a>
@@ -21,14 +22,15 @@
         </nav>
     </div>
     <main> 
+        <!--header div-->
         <header id="about-me">
             <h2> Hello, I am&nbsp;<span> Vítek </span> 😁 </h2></header>
             <div id="about-me">
-                <h1>Im starting web developer</h1>
+                <h1>I'm starting developer</h1>
                 <p>And this is my firts site made by me from scratch</p>
             </div>
         </header>
-
+        <!--boxes with projects, experience, and clients-->
         <div id="boxes">
             <div class="project">
                 <i class="fa-solid fa-clipboard-check"></i>
@@ -46,23 +48,26 @@
                 <p>Satisfied Clients</p>
             </div>
         </div> 
-
+        <!--socials section-->
         <div id="socials">
-            <i class="fa-brands fa-instagram"></i><a href="https://www.instagram.com/vitece.k/" target="_blank">Instagram</a>
-            <i class="fa-brands fa-discord"></i><a href="https://discord.gg/8NDT9QXmFN" target="_blank">Discord</a>
-            <i class="fa-brands fa-github"></i><a href="https://github.com/VitekCharvat" target="_blank">GitHub</a>
+            <a href="https://www.instagram.com/vitece.k/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://discord.gg/8NDT9QXmFN" target="_blank"><i class="fa-brands fa-discord"></i></a>
+            <a href="https://github.com/VitekCharvat" target="_blank"><i class="fa-brands fa-github"></i></a>
         </div>
-
+        <!--contact section-->
         <div id="contact">
-            <i class="fa-solid fa-phone"></i><p onclick="navigator.clipboard.writeText('+420 702 285 091')">+420 702 285 091</p>
-            <i class="fa-solid fa-at"></i><p onclick="navigator.clipboard.writeText('vitekcharvat@gmail.com')">vitekcharvat@gmail.com</p>
+            <div class="phone">
+                    <i class="fa-solid fa-phone"></i><p onclick="navigator.clipboard.writeText('+420 702 285 091')">+420 702 285 091</p>
+            </div>
+            <div class="email">
+                <i class="fa-solid fa-at"></i><p onclick="navigator.clipboard.writeText('vitekcharvat@gmail.com')">vitekcharvat@gmail.com</p>
+            </div>
         </div>
         
     </main>
-    <nav class="back-to-top">
+    <div class="back-to-top">
     <a href="#top">Back to Top <i class="fa-solid fa-arrow-up"></i></a>
-    </nav>
-
+    </div>
     <script src="script.js"></script>
 </body>
 </html> 
